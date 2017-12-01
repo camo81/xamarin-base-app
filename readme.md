@@ -3,14 +3,14 @@
 App sviluppata con xamarin forms e mvvmlightlibs.
 L'app consiste di una pagina con un bottone che aggiorna una label con un numero random. il valore sovrascritto andrà in una seconda label.
 
-# Linee guida per MVVM # 
+# Linee guida per MVVM #
 
 Ogni nuovo xaml form (page1) sotto view prende come namespace view.nomeform (quindi view.page1)
 Per ogni nuovo xaml form è necessario creare anche il rispettivo viewmodel nella caretella apposita (Nuova classe -> vmPage1.cs)
 La classe dovrà essere public, estendo la classe a :ViewModelBase risolvendo i conflitti.
 in app.xaml.cs modificare la pagina caricata in avvio da quella di default a view.page1
 
-# Binding, getter e setter#
+# Binding, getter e setter #
 
 Per ogni page, nel rispettivo file CS della view è necessario aggiungere dopo initialize: 
 
