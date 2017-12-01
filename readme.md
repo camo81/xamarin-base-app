@@ -1,32 +1,22 @@
-Progetto:  selezionare nuovo progetto crossplatform, blank xaml app (portable). 
+# Base app per xamarin #
 
-mainpage.xaml può avere un solo figlio, usare quindi scrollview dove puoi metterci dentro quello che vuoi.
+App sviluppata con xamarin forms e mvvmlightlibs.
+L'app consiste di una pagina con un bottone che aggiorna una label con un numero random. il valore sovrascritto andrà in una seconda label.
 
-Scroll view sovrascrive ogni elemento, mettendo 2 elementi vedrò solo il secondo.
-Quindi dentro ci aggiungo     <StackLayout> e finalmente posso mettere quello che voglio.
+# Linee guida per MVVM # 
 
-Creo la cartella device sotto la app principale e ci sposto dentro app1.droid e app1.ios.
+Ogni nuovo xaml form (page1) sotto view prende come namespace view.nomeform (quindi view.page1)
+Per ogni nuovo xaml form è necessario creare anche il rispettivo viewmodel nella caretella apposita (Nuova classe -> vmPage1.cs)
+La classe dovrà essere public, estendo la classe a :ViewModelBase risolvendo i conflitti.
+in app.xaml.cs modificare la pagina caricata in avvio da quella di default a view.page1
 
-installo da nuget mvvmlighltlibs
+# Binding, getter e setter#
 
-creo  le cartelle:
-view
-model
-viewmodel
-
-ogni nuovo xaml form (page1) sotto view prende come namespace view.nomeform (quindi view.page1)
-
-ogni volta che creo una page creo anche nella caretella viewmodel il rispetto vm.
-Nuova classe -> vmPage1.cs. Rendo la class public, estendo la classe a :ViewModelBase e risolvo i conflitti.
-
-Riapro il file CS della view, dopo initialize compontent aggiungo: 
+Per ogni page, nel rispettivo file CS della view è necessario aggiungere dopo initialize: 
 
 this.BindingContext = new ViewModel.vmPage1();
 
-TIP1: se schiaccio f12 mi porta alla definizione di variabile/funzione/classe
-TIP2: se scrivo ctor e poi tab mi crea un costruttore vuoto di default
-
-Nel file vmPage1.cs (dentro la classe public) aggiungo i getter e setter delle variabili che utilizzo poi in grafica e il costruttore.
+Nel file vmPage1.cs (dentro la classe public) aggiungere i getter e setter delle variabili e il costruttore.
 
         public String tutente = Traduzioni.PageLoginUtente;
         public String TUtente
@@ -39,20 +29,26 @@ Nel file vmPage1.cs (dentro la classe public) aggiungo i getter e setter delle v
             }
         }
 
-in app.xaml.cs modificare la pagina caricata in avvio da quella di default a view.page1
 
 
-per ogni testo o variabile creo un get e set in viewmodel.
+# Bottoni e azioni #
 
-BOTTONI E AZIONI.
+Ogni bottone dovrà avere il relativo command (Command="{Binding CambiaTestoCommand})
+Come per le variabili, anche il binding per il command avrà un un getter relativo, nel viewmodel, di tipo Icommand (public Icommand CambiaTestoCommand) il cui get sarà il costruttore.
 
-Creo un bottone in grafica nello xaml con il relativo command (Command="{Binding CambiaTestoCommand})
-Come per le var, avrò un getter relativo nel viewmodel di tipo Icommand (public Icommand CambiaTestoCommand) il cui get sarà il costruttore.
-Il costruttore non fa altro che specificare che parametri accetta il metodo e la relativa funziona che esegue la logica.                
+## Costruttore ##
+Il costruttore specifica i parametri accettati dal metodo e la relativa funziona che esegue la logica.                
  return new RelayCommand
                                     			(
                                        				(x,y,z) => { CambiaTesto(x,y,z); }
                                    					);
   )
-4) creo finalmente la funzione che esegue la logica, sempre nel viewmodel
+
+Si può a questo punto creare la funzione finale che esegue la logica desidearata nel viewmodel:
+
 private void CambiaTesto( logica che serve  )
+
+# Varie ed eventuali #
+
+TIP1: se schiaccio f12 mi porta alla definizione di variabile/funzione/classe
+TIP2: se scrivo ctor e poi tab mi crea un costruttore vuoto di default
