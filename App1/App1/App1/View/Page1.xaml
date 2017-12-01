@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.View.Page1">
+  <ScrollView>
+    <StackLayout>
+      <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+        <Label Text="Nuovo valore:" FontSize="24"/>
+        <Label Text="{Binding MainText}" FontSize="24" FontAttributes="Bold"/>
+      </StackLayout>
+
+      <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+       <Label Text="Vecchio valore:" FontSize="24" /> 
+       <Label Text="{Binding OldString}" FontSize="24" FontAttributes="Bold"/>   
+      </StackLayout>
+
+      <Button x:Name = "button1" Text="Cambia il valore della label" Command="{Binding CambiaTestoCommand}" />
+
+    </StackLayout>
+
+  </ScrollView>
+
+
+</ContentPage>
