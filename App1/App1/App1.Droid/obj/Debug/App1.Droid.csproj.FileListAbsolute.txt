@@ -1,7 +1,7 @@
 C:\progetti\App1\App1\App1.Droid\bin\Debug\App1.Droid.dll
 C:\progetti\App1\App1\App1.Droid\bin\Debug\App1.Droid.pdb
-C:\progetti\App1\App1\App1.Droid\bin\Debug\App1.Droid.apk
-C:\progetti\App1\App1\App1.Droid\bin\Debug\App1.Droid-Signed.apk
+C:\progetti\App1\App1\App1.Droid\bin\Debug\com.camo.baseapp.apk
+C:\progetti\App1\App1\App1.Droid\bin\Debug\com.camo.baseapp-Signed.apk
 C:\progetti\App1\App1\App1.Droid\bin\Debug\App1.dll
 C:\progetti\App1\App1\App1.Droid\bin\Debug\FormsViewGroup.dll
 C:\progetti\App1\App1\App1.Droid\bin\Debug\GalaSoft.MvvmLight.dll
@@ -52,7 +52,7 @@ C:\progetti\App1\App1\App1.Droid\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
 C:\progetti\App1\App1\App1.Droid\obj\Debug\App1.Droid.csprojResolveAssemblyReference.cache
 C:\progetti\App1\App1\App1.Droid\obj\Debug\App1.Droid.dll
 C:\progetti\App1\App1\App1.Droid\obj\Debug\App1.Droid.pdb
-C:\progetti\App1\App1\App1.Droid\obj\Debug\android\bin\App1.Droid.apk
+C:\progetti\App1\App1\App1.Droid\obj\Debug\android\bin\com.camo.baseapp.apk
 C:\progetti\App1\App1\App1.Droid\obj\Debug\res\drawable\icon.png
 C:\progetti\App1\App1\App1.Droid\obj\Debug\res\drawable-hdpi\icon.png
 C:\progetti\App1\App1\App1.Droid\obj\Debug\res\drawable-xhdpi\icon.png

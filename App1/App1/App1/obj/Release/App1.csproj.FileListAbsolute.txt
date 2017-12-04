@@ -16,11 +16,16 @@ C:\progetti\App1\App1\App1\bin\Release\Xamarin.Forms.Core.pdb
 C:\progetti\App1\App1\App1\bin\Release\Xamarin.Forms.Core.xml
 C:\progetti\App1\App1\App1\bin\Release\Xamarin.Forms.Xaml.pdb
 C:\progetti\App1\App1\App1\bin\Release\Xamarin.Forms.Xaml.xml
+C:\progetti\App1\App1\App1\obj\Release\App1.csprojResolveAssemblyReference.cache
 C:\progetti\App1\App1\App1\obj\Release\App1.MainPage.xaml.g.cs
 C:\progetti\App1\App1\App1\obj\Release\App1.App.xaml.g.cs
 C:\progetti\App1\App1\App1\obj\Release\App1.View.Page1.xaml.g.cs
 C:\progetti\App1\App1\App1\obj\Release\App1.dll
 C:\progetti\App1\App1\App1\obj\Release\App1.pdb
+C:\progetti\App1\App1\App1\obj\Release\App1.dll.mdb
+C:\progetti\App1\App1\App1\bin\Release\App1.dll.mdb
+C:\progetti\App1\App1\App1\obj\Release\App1.dll.mdb
+C:\progetti\App1\App1\App1\bin\Release\App1.dll.mdb
 C:\progetti\App1\App1\App1\obj\Release\App1.dll.mdb
 C:\progetti\App1\App1\App1\bin\Release\App1.dll.mdb
 C:\progetti\App1\App1\App1\obj\Release\App1.dll.mdb
