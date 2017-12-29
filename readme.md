@@ -1,7 +1,7 @@
 # Base app per xamarin #
 
 App sviluppata con xamarin forms e mvvmlightlibs.
-L'app consiste di una pagina con un bottone che aggiorna una label con un numero random. il valore sovrascritto andrà in una seconda label.
+L'app consiste in una pagina con un bottone che aggiorna una label con un numero random. il valore sovrascritto andrà in una seconda label.
 
 # Linee guida per MVVM #
 
